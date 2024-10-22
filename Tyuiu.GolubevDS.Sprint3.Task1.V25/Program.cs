@@ -18,11 +18,12 @@ Console.WriteLine("*************************************************************
 
 int value = 2;
 int startValue = 1;
-int endValue = 10;
+int endValue = 6;
 
-Console.WriteLine("Переменая Х = " + value);
+Console.WriteLine("Переменая А = " + value);
 Console.WriteLine("Старт шага = " + startValue);
 Console.WriteLine("Конец шага = " + endValue);
-Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(value, startValue, endValue));
+
+Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(value, startValue, endValue));
 
 Console.ReadLine();
