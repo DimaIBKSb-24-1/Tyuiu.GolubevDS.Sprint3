@@ -9,7 +9,7 @@ public class DataService : ISprint3Task1V25
         while (startValue <= stopValue)
         {
            
-            multSeries = multSeries * (Math.Pow(value, startValue) - (1 / 4)) * Math.Cos(5);
+            multSeries = multSeries * (Math.Pow(value, startValue) - (1.0 / 4.0)) * Math.Cos(5);
 
             startValue++;
 
