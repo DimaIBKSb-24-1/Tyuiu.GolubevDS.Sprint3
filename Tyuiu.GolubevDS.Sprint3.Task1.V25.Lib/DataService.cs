@@ -5,11 +5,11 @@ public class DataService : ISprint3Task1V25
 {
     public double GetMultiplySeries(int value, int startValue, int stopValue)
     {
-        double multSeries = 0; 
+        double multSeries = 1; 
         while (startValue <= stopValue)
         {
            
-            multSeries += (Math.Pow(value, startValue) - (1.0 / 4.0)) * Math.Cos(5);
+            multSeries = multSeries * (Math.Pow(value, startValue) - (1 / 4)) * Math.Cos(5);
 
             startValue++;
 
