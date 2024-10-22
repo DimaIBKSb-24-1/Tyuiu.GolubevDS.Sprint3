@@ -12,6 +12,7 @@ public class DataService : ISprint3Task1V25
             multSeries += (Math.Pow(value, startValue) - (1.0 / 4.0)) * Math.Cos(5);
 
             startValue++;
+
         }
 
         return Math.Round(multSeries, 3);
