@@ -11,7 +11,7 @@ public class DataServiceTest
         int startValue = 5;
         int stopValue = 16;
         int res = ds.GetSumTheDivisors(startValue, stopValue);
-        int wait = 205;
+        int wait = 42;
         Assert.AreEqual(res, wait);
     }
 }

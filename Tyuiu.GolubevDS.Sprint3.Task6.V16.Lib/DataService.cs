@@ -5,18 +5,21 @@ public class DataService : ISprint3Task6V16
 {
     public int GetSumTheDivisors(int startValue, int stopValue)
     {
-        int x;
-        int sum = 0;
-        for (x = startValue; x <= stopValue; x++)
+        int totalDivisorCount = 0; 
+
+        for (int x = startValue; x <= stopValue; x++)
         {
+            int divisorCount = 0; 
             for (int d = 1; d <= x; d++)
             {
-                if (x % d == 0)
+                if (x % d == 0) 
                 {
-                    sum += d;
+                    divisorCount++; 
                 }
             }
+            totalDivisorCount += divisorCount; 
         }
-        return sum;
+
+        return totalDivisorCount;
     }
 }
